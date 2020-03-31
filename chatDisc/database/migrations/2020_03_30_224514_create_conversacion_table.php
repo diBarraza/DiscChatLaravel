@@ -15,6 +15,11 @@ class CreateConversacionTable extends Migration
     {
         Schema::create('conversacion', function (Blueprint $table) {
             $table->id();
+            $table->integer("usuario_uno");
+            $table->integer("usuario_dos");
+            $table->string("ip");
+            $table->integer("hora");
+            $table->integer("status");
             $table->timestamps();
         });
     }
