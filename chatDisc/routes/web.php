@@ -17,13 +17,13 @@ use Illuminate\Support\Facades\Route;
 Route::post('conversacion','ConversacionController@createConversacion');
 Route::get('conversacion/{id}','ConversacionController@updateConversacion');
 Route::post('conversacion/{id}','ConversacionController@deleteConversacion');
-Route::get('conversacion','ConversacionController@indexConversacion');
+Route::get('conversacion','ConversacionController@index');
 
 
 Route::post('conversacionReply','ConversacionReplyController@createConversacionReply');
 Route::get('conversacionReply/{id}','ConversacionReplyController@updateConversacionReply');
 Route::post('conversacionReply/{id}','ConversacionReplyController@deleteConversacionReply');
-Route::get('conversacionReply','ConversacionReplyController@indexConversacionReply');
+Route::get('conversacionReply','ConversacionReplyController@index');
 
 
 Route::get('/', function () {
